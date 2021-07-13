@@ -2,9 +2,15 @@
   "name": "dss",
   "version": "1.0.0",
   "description": "dead simple signalling for webrtc",
-  "main": "index.js",
+  "main": "src/router.js",
+  "bin": "src/dss.js",
+  "pkg": {
+    "scripts": "src/*.js",
+    "outputPath": "dist",
+    "targets": [ "linux", "win" ]
+  },
   "scripts": {
-    "start": "node bin/dss.js",
+    "start": "node src/dss.js",
     "lint": "eslint .",
     "test": "mocha"
   },

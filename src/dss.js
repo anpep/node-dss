@@ -3,7 +3,7 @@
 const http = require('http')
 const finalhandler = require('finalhandler')
 const debug = require('debug')('dss:boot')
-const router = require('../index')
+const router = require('./router')
 
 const argv = require('yargs/yargs')(process.argv.slice(2))
   .command('$0 [port]', 'dead-simple signaler', yargs => {
